@@ -1,0 +1,10 @@
+const express = require('express')
+const { addproductpage } = require('../controllers/productController')
+const router = express.Router()
+router.get('/',addproductpage)
+router.get('/view',)
+router.post('/add',)
+router.get('/delete',)
+router.post('/update',)
+router.get('/edit',)
+module.exports = router

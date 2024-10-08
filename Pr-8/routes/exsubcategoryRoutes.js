@@ -1,0 +1,10 @@
+const express = require('express')
+const { addexsubpage, viewexsubpage, addexsubcategory, deletexsubcategory, editexsubpage, updateexsubcategory } = require('../controllers/exsubcategorycontroller')
+const router = express.Router()
+router.get('/',addexsubpage)
+router.get('/view',viewexsubpage)
+router.post('/add',addexsubcategory)
+router.get('/delete',deletexsubcategory)
+router.get('/edit',editexsubpage)
+router.post('/update',updateexsubcategory)
+module.exports = router

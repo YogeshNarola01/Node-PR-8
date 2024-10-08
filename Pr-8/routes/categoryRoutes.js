@@ -1,0 +1,10 @@
+const express = require('express')
+const { addcategoryPage, addcategory, viewcategorypage, deletecategory, updatecategory, editcategorypage } = require('../controllers/categoryController')
+const router = express.Router()
+router.get('/',addcategoryPage)
+router.post('/add',addcategory)
+router.get('/view',viewcategorypage)
+router.get('/delete',deletecategory)
+router.post('/update',updatecategory)
+router.get('/edit',editcategorypage)
+module.exports = router
